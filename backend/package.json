@@ -4,11 +4,21 @@
   "description": "Backend Service of Project Job Platform",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node server",
+    "start": "babel-node server"
   },
   "author": "Tahmid Hasan",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0"
   }
 }
